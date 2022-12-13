@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>expressiona&conditional prectise set </title>
+    </head>
+    <body>
+        
+
+
+
+        <script>
+           
+           //  1. LOGICAL OPERATOR TO FIND AGE OF A PERSON BETWEEN 10 & 20;
+
+            let age = prompt("What is your age")
+
+            parseInt(age)
+
+            if(age>10 && age<20){
+                window.alert("Your age lies between 10 & 20")
+            }
+            else{
+                console.log("Your age doesnt lies between 10 & 20")
+            }
+           
+            //  2. Demonstrate the use of Switch case Statment
+
+            let age2 = prompt("What is your age ")
+            switch (age2){
+                case "12":
+                    console.log("Your age is 12")
+                    break
+                case "13":
+                    console.log("Your age is 13")
+                    break
+                case "14":
+                    console.log("Your age is 14")
+                    break
+                case "15":
+                    console.log("Your age is 15")
+                    break
+                case "16":
+                    console.log("Your age is 16")
+                    break    
+                default:
+                    console.log("YOur age is not Special")
+            }
+
+            //  3. Find whether Number is Divisible by 2 and 3
+
+            let num = prompt("Enter Your Number ")
+            num =  Number.parseInt(num)
+            if(num % 2 == 0 && num % 3 == 0){
+                console.log('Your NUmber is divisible by 2 and 3')
+            }
+            else{
+                console.log('Your NUmber is not divisible by 2 and 3')
+                
+            }
+
+                /*  4.  Print "you can dirve " or "not drive"bassed on your age being 
+                 greater than 18 using ternary operator
+                */
+
+                let age1 = prompt("Enter your age for Driving") 
+                let a = age >18 ? "you can drive" : "you can not Drive"
+                console.log(a)
+        </script>
+    </body>
+</html>
